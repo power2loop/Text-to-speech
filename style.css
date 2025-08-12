@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #090979, #00D4FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+
+}
+
+.container h1 span {
+    color: #ffb700;
+    display: inline-block;
+    animation: shake 0.1s linear 10;
+    border-bottom: 2px solid #ffb700;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-2px);
+    }
+
+    50% {
+        transform: translate(0);
+    }
+
+    75% {
+        transform: translate(2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.container h1 span:hover {
+    color: #ff2963;
+    border-bottom: 2px solid #ff2963;
+    transition: 0.3s ease-in-out;
+    animation-name: text-blink;
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    background: #00b7ff;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background: #ff2929;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button:hover {
+    /* background: #ff9500; */
+    border: 1px solid #ffffff;
+    transition: 0.3s ease;
+}
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+select {
+    flex: 1;
+    color: #fff;
+    background: #0091ff;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+}
